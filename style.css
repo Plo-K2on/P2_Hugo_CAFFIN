@@ -1,5 +1,5 @@
 
-h1, em
+em
 {
     color: blue;
 }
@@ -8,3 +8,10 @@ em,
 {
     text-align: right;
 }
+
+#conteneur
+{
+    display: flex;
+    justify-content: space-around;
+}
+
