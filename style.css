@@ -43,16 +43,39 @@ nav ul{
     display: flex;
     flex-direction: row;
     list-style: none;
+    margin-top: 0;
 }
 nav ul li{
     margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+}
+nav ul li:hover{
+    border-top: 1px solid blue;
 }
 nav ul li a{
     text-decoration: none ;
 }
-nav ul li{
+
+/* rechercher */
+#recherche {
     display: flex;
     flex-direction: row;
+    margin-top: 10px;
+    height: 50px;
+}
+#recherche input{
+    width: 230px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+#recherche p{
+    background-color: blue;
+    color: white;
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 /* Filtres */
@@ -158,7 +181,7 @@ figure{
 .populaires figure figcaption{
     height: 81px;
 }
-#conteneur .populaires
+.conteneur .populaires
 {
     display: flex;
     flex-direction: column;
