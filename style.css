@@ -1,17 +1,169 @@
-
-em
-{
-    color: blue;
+@font-face {
+    font-family: "Raleway";
+    src: url("./Raleway/Raleway-VariableFont_wght.ttf");
+    font-weight: 100 1000;
 }
 
-em,
-{
-    text-align: right;
+body {
+    color: black;
+    font-size: 12px;
+    font-family: "Raleway", sans-serif;
+}
+header {
+    display: flex;
+    position: relative;
+    flex-direction: column;
 }
 
-#conteneur
+/* CSS global */
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid blue;
+    min-height: 120px;
+    min-width: 240px;
+    
+}
+.image img{
+    /* display: none; */
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+/* Navigation */
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+nav ul li{
+    margin-left: 20px;
+}
+nav ul li a{
+    text-decoration: none ;
+}
+nav ul li{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Filtres */
+#filtres{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#filtres ul{
+    display: flex;
+    flex-direction: row;
+}
+#filtres ul li{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    border-color: #F2F2F2;
+    border: 2px solid ;
+    border-radius: 50px;
+    height: 40px;
+    align-items: center;
+    border-color: #F2F2F2;
+}
+#filtres ul li i{
+    padding: 15px;
+    background-color: #DEEBFF;
+    border-radius: 20px;
+    color: #0065FC;
+}
+
+figure{
+    border: 5px white solid;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 5px silver;
+}
+
+/* Hebergements */
+.hebergements{
+    display: flex;
+    flex-wrap: wrap;
+}
+.hebergements figure{
+    max-width: 20%;
+    height: 200px;
+}
+.hebergements figure .image{
+    height: 115px;
+    border: 1px white solid;
+    border-radius: 10px;
+}
+.hebergements figure .image img{
+    width: 100%;
+}
+.hebergements figure figcaption{
+    height: 80px;
+}
+#conteneur .hebergements
 {
     display: flex;
-    justify-content: space-around;
+    align-content: space-around;
+    border: 2px #F2F2F2 solid;
+    border-radius: 10px;
+    background-color: #F2F2F2;
 }
 
+/* Activités */
+.activités{
+    display: flex;
+    flex-wrap: wrap;
+}
+.activités figure{
+    max-width: 20%;
+    height: 195px;
+}
+.activités figure .image{
+    height: 114px;
+}
+.activités figure .image img{
+    width: 100%;
+}
+.activités figure figcaption{
+    height: 81px;
+}
+
+/* Les plus populaires */
+.populaires{
+    display: flex;
+    flex-wrap: wrap;
+}
+.populaires figure{
+    max-width: 20%;
+    height: 195px;
+}
+.populaires figure .image{
+    height: 114px;
+    border: 1px white solid;
+    border-radius: 10px;
+}
+.populaires figure .image img{
+    width: 100%;
+}
+.populaires figure figcaption{
+    height: 81px;
+}
+#conteneur .populaires
+{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    border: 2px #F2F2F2 solid;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+}
