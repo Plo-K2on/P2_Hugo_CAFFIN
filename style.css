@@ -68,21 +68,37 @@ nav ul li a{
     height: 50px;
     border-radius: 10px;
     border: 1px black solid;
-
+    width: 420px;
+    overflow: hidden;
+}
+#recherche i { /*Couleur d'arrière plan disparue*/
+    width: 50px;
+    font-size: 25px;
+    color: black;
+    margin: 0;
+    text-align: center;
+    background-color: F2F2F2;
+    border-radius: 10px;
+    padding: 10px 0;
 }
 #recherche input {
     width: 230px;
     padding: 0;
     margin: 0;
     color: black;
-
+    border: hidden
 }
 #recherche p {
     background-color: #0065FC;
+    border-radius: 10px;
     color: white;
     padding: 0;
-    margin: 0;
-
+    margin: auto;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /* Filtres */
@@ -123,7 +139,15 @@ figure{
 /* Hebergement et Populaire */
 main {
     display: flex;
-    flex-direction: row; 
+    justify-content: space-between;
+    border-radius: 10px;
+
+}
+main section{
+    width: 60%;
+}
+main aside{
+    width: 30%;
 }
 
 /* Hebergements */
@@ -132,7 +156,7 @@ main {
     flex-wrap: wrap;
 }
 .hebergements figure{
-    max-width: 20%;
+    width: 240px;
     height: 200px;
 }
 .hebergements figure .image{
@@ -146,13 +170,16 @@ main {
 .hebergements figure figcaption{
     height: 80px;
 }
+.conteneur{
+    background-color: #F2F2F2;
+
+}
 .conteneur .hebergements
 {
     display: flex;
     align-content: space-around;
     border: 2px #F2F2F2 solid;
     border-radius: 10px;
-    background-color: #F2F2F2;
 }
 
 /* Les plus populaires */
@@ -165,7 +192,7 @@ main {
     height: 195px;
 }
 .populaires figure .image{
-    height: 114px;
+    height: 115px;
     border: 1px white solid;
     border-radius: 10px;
 }
@@ -173,7 +200,7 @@ main {
     width: 100%;
 }
 .populaires figure figcaption{
-    height: 81px;
+    height: 80px;
 }
 .conteneur .populaires
 {
@@ -183,7 +210,6 @@ main {
     border: 2px #F2F2F2 solid;
     border-radius: 10px;
     background-color: #F2F2F2;
-    margin-left: 40px;
 }
 
 /* Activités */
@@ -208,9 +234,10 @@ main {
     
 }
 .activites figure figcaption{
-    height: 81px;
+    height: 80px;
     
 }
+
 .conteneur .activites{
     display: flex;
     align-content: space-around;
@@ -223,5 +250,9 @@ main {
 footer{
     display: flex;
     position: relative;
+}
+footer .conteneur{
+    display: flex;
     flex-direction: column;
+
 }
