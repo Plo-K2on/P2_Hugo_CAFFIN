@@ -28,11 +28,13 @@ header {
     min-width: 240px;
     
 }
-.image img{
-    /* display: none; */
+/*.image img{
     flex-shrink: 0;
     min-width: 100%;
     min-height: 100%
+}*/
+.fa-star{
+    color: grey;
 }
 
 /* Navigation */
@@ -64,33 +66,34 @@ nav ul li a{
 #recherche {
     display: flex;
     flex-direction: row;
-    margin-top: 10px;
     height: 50px;
-    border-radius: 10px;
-    border: 1px black solid;
+    border-radius: 15px;
+    border: 1px solid #F2F2F2 ;
     width: 420px;
     overflow: hidden;
+    background-color: #F2F2F2;
 }
-#recherche i { /*Couleur d'arrière plan disparue*/
+
+
+#recherche i {
     width: 50px;
     font-size: 25px;
     color: black;
     margin: 0;
     text-align: center;
-    background-color: F2F2F2;
     border-radius: 10px;
     padding: 10px 0;
 }
 #recherche input {
-    width: 230px;
-    padding: 0;
+    width: 60%;
+    padding: 3%;
     margin: 0;
     color: black;
-    border: hidden
+    border: hidden;
+    font-weight: bold;
 }
 #recherche p {
     background-color: #0065FC;
-    border-radius: 10px;
     color: white;
     padding: 0;
     margin: auto;
@@ -129,7 +132,7 @@ nav ul li a{
     color: #0065FC;
 }
 
-figure{
+main figure{
     border: 5px white solid;
     border-radius: 10px;
     background-color: white;
@@ -150,14 +153,23 @@ main aside{
     width: 30%;
 }
 
+/*conteneur*/
+main .conteneur{
+    background-color: #F2F2F2;
+
+}
 /* Hebergements */
 .hebergements{
     display: flex;
     flex-wrap: wrap;
+    align-content: space-around;
+    border: 2px #F2F2F2 solid;
+    border-radius: 10px;
 }
+
 .hebergements figure{
     width: 240px;
-    height: 200px;
+    height: 215px;
 }
 .hebergements figure .image{
     height: 115px;
@@ -170,16 +182,8 @@ main aside{
 .hebergements figure figcaption{
     height: 80px;
 }
-.conteneur{
-    background-color: #F2F2F2;
-
-}
-.conteneur .hebergements
-{
-    display: flex;
-    align-content: space-around;
-    border: 2px #F2F2F2 solid;
-    border-radius: 10px;
+.hebergements figure figcaption .fa-star-blue{
+    color: #0065FC;
 }
 
 /* Les plus populaires */
@@ -188,8 +192,8 @@ main aside{
     flex-wrap: wrap;
 }
 .populaires figure{
-    /*max-width: 20%;*/
     height: 195px;
+    display: flex;
 }
 .populaires figure .image{
     height: 115px;
@@ -201,12 +205,15 @@ main aside{
 }
 .populaires figure figcaption{
     height: 80px;
+    
+}
+.populaires figure figcaption .fa-star-blue{
+    color: #0065FC;
 }
 .conteneur .populaires
 {
     display: flex;
     flex-direction: column;
-    /*align-content: space-around;*/
     border: 2px #F2F2F2 solid;
     border-radius: 10px;
     background-color: #F2F2F2;
@@ -218,16 +225,18 @@ main aside{
     flex-direction: row;
 }
 .activites figure{
-   /* max-width: 20%;*/
     height: 195px;
-    
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 5px silver
 }
 .activites .colonne .image img{
     bottom: 60px;
 }
 .activites figure .image{
     height: 114px;
-    
+    border: hidden;
+    border-radius: 10px;
 }
 .activites figure .image img{
     width: 100%;
@@ -235,15 +244,12 @@ main aside{
 }
 .activites figure figcaption{
     height: 80px;
-    
 }
 
 .conteneur .activites{
     display: flex;
     align-content: space-around;
-    border: 2px #F2F2F2 solid;
     border-radius: 10px;
-    background-color: #F2F2F2;
 }
 
 /*footer*/
