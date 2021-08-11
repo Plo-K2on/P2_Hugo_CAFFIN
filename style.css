@@ -34,7 +34,7 @@ header {
     min-height: 100%
 }*/
 .fa-star{
-    color: grey;
+    color: #F2F2F2;
 }
 
 /* Navigation */
@@ -53,7 +53,6 @@ nav ul li{
     margin-left: 20px;
     display: flex;
     flex-direction: row;
-    
 }
 nav ul li:hover{
     border-top: 1px solid #0065FC;
@@ -91,6 +90,9 @@ nav ul li a{
     color: black;
     border: hidden;
     font-weight: bold;
+}
+#recherche input::placeholder{
+    color:black;
 }
 #recherche p {
     background-color: #0065FC;
@@ -143,33 +145,42 @@ main figure{
 main {
     display: flex;
     justify-content: space-between;
-    border-radius: 10px;
+    
 
 }
 main section{
-    width: 60%;
+    width: 65%;
 }
 main aside{
-    width: 30%;
+    width: 32%;
+}
+main aside p{
+    display: flex;
+    justify-content: space-between;
 }
 
 /*conteneur*/
 main .conteneur{
     background-color: #F2F2F2;
-
+    border-radius: 10px;
 }
+main .conteneur p{
+    margin: 10px 10px;
+}
+    
 /* Hebergements */
 .hebergements{
     display: flex;
     flex-wrap: wrap;
-    align-content: space-around;
-    border: 2px #F2F2F2 solid;
-    border-radius: 10px;
+    justify-content: space-around;
 }
 
 .hebergements figure{
-    width: 240px;
+    max-width: 25%;
     height: 215px;
+    overflow: hidden;
+    margin: 0;
+    margin-bottom: 30px;
 }
 .hebergements figure .image{
     height: 115px;
@@ -182,6 +193,13 @@ main .conteneur{
 .hebergements figure figcaption{
     height: 80px;
 }
+.hebergements figure figcaption h2{
+    font-size: 14px;
+    margin: 0;
+}
+.hebergements figure figcaption p{
+    margin: 0;
+}
 .hebergements figure figcaption .fa-star-blue{
     color: #0065FC;
 }
@@ -191,6 +209,7 @@ main .conteneur{
     display: flex;
     flex-wrap: wrap;
 }
+
 .populaires figure{
     height: 195px;
     display: flex;
