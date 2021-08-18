@@ -8,6 +8,8 @@ body {
     color: black;
     font-size: 12px;
     font-family: "Raleway", sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 header {
     display: flex;
@@ -18,19 +20,19 @@ header {
 /* CSS global */
 .image{
     display: flex;
-    justify-content: center;
     align-items: center;
     overflow: hidden;
-    border: 1px solid blue;
     min-height: 120px;
     min-width: 240px;
     
 }
-.image img{
-    /* display: none; */
+/*.image img{
     flex-shrink: 0;
     min-width: 100%;
     min-height: 100%
+}*/
+.fa-star{
+    color: silver;
 }
 
 /* Navigation */
@@ -51,7 +53,7 @@ nav ul li{
     flex-direction: row;
 }
 nav ul li:hover{
-    border-top: 1px solid blue;
+    border-top: 1px solid #0065FC;
 }
 nav ul li a{
     text-decoration: none ;
@@ -61,21 +63,43 @@ nav ul li a{
 #recherche {
     display: flex;
     flex-direction: row;
-    margin-top: 10px;
     height: 50px;
+    border-radius: 15px;
+    border: 1px solid #F2F2F2 ;
+    width: 420px;
+    overflow: hidden;
+    background-color: #F2F2F2;
 }
-#recherche input{
-    width: 230px;
-    height: 100%;
-    padding: 0;
+#recherche i {
+    width: 50px;
+    font-size: 25px;
+    color: black;
     margin: 0;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 0;
 }
-#recherche p{
-    background-color: blue;
+#recherche input {
+    width: 60%;
+    padding: 3%;
+    margin: 0;
+    color: black;
+    border: hidden;
+    font-weight: bold;
+}
+#recherche input::placeholder{
+    color:black;
+}
+#recherche p {
+    background-color: #0065FC;
     color: white;
-    height: 100%;
     padding: 0;
-    margin: 0;
+    margin: auto;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /* Filtres */
@@ -106,59 +130,74 @@ nav ul li a{
     color: #0065FC;
 }
 
-figure{
+main figure{
     border: 5px white solid;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: white;
     box-shadow: 2px 2px 5px silver;
 }
 
+/* Hebergement et Populaire */
+main {
+    display: flex;
+    justify-content: space-between;
+}
+main section{
+    width: 65%;
+}
+main section h2{
+    margin-top: 50px;
+    margin: 5%;
+}
+main aside{
+    width: 32%;
+}
+main aside p{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*conteneur*/
+main .conteneur{
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+  
 /* Hebergements */
 .hebergements{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 .hebergements figure{
-    max-width: 20%;
-    height: 200px;
+    max-width: 28%;
+    height: 215px;
+    overflow: hidden;
+    margin: 0;
+    margin-bottom: 30px;
 }
 .hebergements figure .image{
     height: 115px;
     border: 1px white solid;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
 }
 .hebergements figure .image img{
     width: 100%;
 }
 .hebergements figure figcaption{
     height: 80px;
+    margin: 10px;
 }
-#conteneur .hebergements
-{
-    display: flex;
-    align-content: space-around;
-    border: 2px #F2F2F2 solid;
-    border-radius: 10px;
-    background-color: #F2F2F2;
+.hebergements figure figcaption p{
+    font-size: 12px;
+    margin: 5px 0;
 }
-
-/* Activités */
-.activités{
-    display: flex;
-    flex-wrap: wrap;
+.hebergements figure figcaption h2{
+    font-size: 14px;
+    margin: 0;
 }
-.activités figure{
-    max-width: 20%;
-    height: 195px;
-}
-.activités figure .image{
-    height: 114px;
-}
-.activités figure .image img{
-    width: 100%;
-}
-.activités figure figcaption{
-    height: 81px;
+.hebergements figure figcaption .fa-star-blue{
+    color: #0065FC;
 }
 
 /* Les plus populaires */
@@ -167,26 +206,82 @@ figure{
     flex-wrap: wrap;
 }
 .populaires figure{
-    max-width: 20%;
     height: 195px;
+    display: flex;
 }
 .populaires figure .image{
-    height: 114px;
+    height: 115px;
+    width: 40%;
     border: 1px white solid;
     border-radius: 10px;
+    overflow: hidden;
 }
 .populaires figure .image img{
     width: 100%;
 }
 .populaires figure figcaption{
-    height: 81px;
+    height: 80px;
+    width: 60%;
+}
+.populaires figure figcaption h2{
+    margin-bottom: 5px;
+}
+.populaires figure figcaption p{
+    margin: 0;
+    margin-bottom: 20px;
+}
+.populaires figure figcaption .fa-star-blue{
+    color: #0065FC;
 }
 .conteneur .populaires
 {
     display: flex;
     flex-direction: column;
-    align-content: space-around;
     border: 2px #F2F2F2 solid;
     border-radius: 10px;
     background-color: #F2F2F2;
+}
+
+/* Activités */
+.activites{
+    display: flex;
+    flex-direction: row;
+}
+.activites figure{
+    height: 195px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 5px silver
+}
+.activites .colonne .image img{
+    bottom: 60px;
+}
+.activites figure .image{
+    height: 114px;
+    border: hidden;
+    border-radius: 10px;
+}
+.activites figure .image img{
+    width: 100%;
+    
+}
+.activites figure figcaption{
+    height: 80px;
+}
+
+.conteneur .activites{
+    display: flex;
+    align-content: space-around;
+    border-radius: 10px;
+}
+
+/*footer*/
+footer{
+    display: flex;
+    position: relative;
+}
+footer #conteneur{
+    display: flex;
+    flex-direction: column;
+
 }
