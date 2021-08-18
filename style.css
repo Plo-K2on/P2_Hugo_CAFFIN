@@ -23,8 +23,6 @@ header {
     align-items: center;
     overflow: hidden;
     min-height: 120px;
-    min-width: 240px;
-    
 }
 /*.image img{
     flex-shrink: 0;
@@ -146,8 +144,8 @@ main section{
     width: 65%;
 }
 main section h2{
-    margin-top: 50px;
-    margin: 5%;
+    margin: 3% 3% 3% 3%;
+    font-size: 15px;
 }
 main aside{
     width: 32%;
@@ -203,18 +201,21 @@ main .conteneur{
 /* Les plus populaires */
 .populaires{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
 .populaires figure{
-    height: 195px;
+    height: 130px;
     display: flex;
 }
 .populaires figure .image{
-    height: 115px;
+    /*height: 115px;*/
     width: 40%;
     border: 1px white solid;
     border-radius: 10px;
     overflow: hidden;
+    display: flex;
+    align-items: flex-start;
 }
 .populaires figure .image img{
     width: 100%;
@@ -225,22 +226,24 @@ main .conteneur{
 }
 .populaires figure figcaption h2{
     margin-bottom: 5px;
+    font-size: 15px;
 }
 .populaires figure figcaption p{
     margin: 0;
     margin-bottom: 20px;
+    width: 80%;
 }
 .populaires figure figcaption .fa-star-blue{
     color: #0065FC;
 }
-.conteneur .populaires
+/*.conteneur .populaires
 {
     display: flex;
     flex-direction: column;
     border: 2px #F2F2F2 solid;
     border-radius: 10px;
     background-color: #F2F2F2;
-}
+}*/
 
 /* Activités */
 .activites{
@@ -256,6 +259,12 @@ main .conteneur{
 .activites .colonne .image img{
     bottom: 60px;
 }
+.activites .colonne_simple figure{
+    height: 100%;
+}
+.activites .colonne_double figure{
+    height: 50%;
+}
 .activites figure .image{
     height: 114px;
     border: hidden;
@@ -263,7 +272,6 @@ main .conteneur{
 }
 .activites figure .image img{
     width: 100%;
-    
 }
 .activites figure figcaption{
     height: 80px;
