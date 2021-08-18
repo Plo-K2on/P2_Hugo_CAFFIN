@@ -20,10 +20,8 @@ header {
 /* CSS global */
 .image{
     display: flex;
-    justify-content: center;
     align-items: center;
     overflow: hidden;
-    border: 1px solid #0065FC;
     min-height: 120px;
     min-width: 240px;
     
@@ -34,7 +32,7 @@ header {
     min-height: 100%
 }*/
 .fa-star{
-    color: #F2F2F2;
+    color: silver;
 }
 
 /* Navigation */
@@ -151,6 +149,11 @@ main {
 main section{
     width: 65%;
 }
+main section h2{
+   
+    margin-top: 50px;
+    margin: 5%;
+}
 main aside{
     width: 32%;
 }
@@ -175,6 +178,7 @@ main .conteneur p{
     justify-content: space-around;
 }
 
+
 .hebergements figure{
     max-width: 25%;
     height: 215px;
@@ -192,10 +196,6 @@ main .conteneur p{
 }
 .hebergements figure figcaption{
     height: 80px;
-}
-.hebergements figure figcaption h2{
-    font-size: 14px;
-    margin: 0;
 }
 .hebergements figure figcaption p{
     margin: 0;
@@ -220,12 +220,20 @@ main .conteneur p{
     border-radius: 10px;
 }
 .populaires figure .image img{
-    width: 100%;
+    width: 70%;
 }
 .populaires figure figcaption{
     height: 80px;
-    
 }
+.populaires figure figcaption h2{
+    margin-bottom: 5px;
+}
+.populaires figure figcaption p{
+    margin: 0;
+    margin-bottom: 20px;
+
+}
+
 .populaires figure figcaption .fa-star-blue{
     color: #0065FC;
 }
@@ -276,7 +284,7 @@ footer{
     display: flex;
     position: relative;
 }
-footer .conteneur{
+footer #conteneur{
     display: flex;
     flex-direction: column;
 
