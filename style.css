@@ -70,8 +70,6 @@ nav ul li a{
     overflow: hidden;
     background-color: #F2F2F2;
 }
-
-
 #recherche i {
     width: 50px;
     font-size: 25px;
@@ -134,7 +132,7 @@ nav ul li a{
 
 main figure{
     border: 5px white solid;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: white;
     box-shadow: 2px 2px 5px silver;
 }
@@ -143,14 +141,11 @@ main figure{
 main {
     display: flex;
     justify-content: space-between;
-    
-
 }
 main section{
     width: 65%;
 }
 main section h2{
-   
     margin-top: 50px;
     margin: 5%;
 }
@@ -167,20 +162,15 @@ main .conteneur{
     background-color: #F2F2F2;
     border-radius: 10px;
 }
-main .conteneur p{
-    margin: 10px 10px;
-}
-    
+  
 /* Hebergements */
 .hebergements{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
-
 .hebergements figure{
-    max-width: 25%;
+    max-width: 28%;
     height: 215px;
     overflow: hidden;
     margin: 0;
@@ -189,15 +179,21 @@ main .conteneur p{
 .hebergements figure .image{
     height: 115px;
     border: 1px white solid;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
 }
 .hebergements figure .image img{
     width: 100%;
 }
 .hebergements figure figcaption{
     height: 80px;
+    margin: 10px;
 }
 .hebergements figure figcaption p{
+    font-size: 12px;
+    margin: 5px 0;
+}
+.hebergements figure figcaption h2{
+    font-size: 14px;
     margin: 0;
 }
 .hebergements figure figcaption .fa-star-blue{
@@ -209,21 +205,23 @@ main .conteneur p{
     display: flex;
     flex-wrap: wrap;
 }
-
 .populaires figure{
     height: 195px;
     display: flex;
 }
 .populaires figure .image{
     height: 115px;
+    width: 40%;
     border: 1px white solid;
     border-radius: 10px;
+    overflow: hidden;
 }
 .populaires figure .image img{
-    width: 70%;
+    width: 100%;
 }
 .populaires figure figcaption{
     height: 80px;
+    width: 60%;
 }
 .populaires figure figcaption h2{
     margin-bottom: 5px;
@@ -231,9 +229,7 @@ main .conteneur p{
 .populaires figure figcaption p{
     margin: 0;
     margin-bottom: 20px;
-
 }
-
 .populaires figure figcaption .fa-star-blue{
     color: #0065FC;
 }
