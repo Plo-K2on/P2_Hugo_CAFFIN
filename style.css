@@ -153,6 +153,9 @@ main aside{
 main aside p{
     display: flex;
     justify-content: space-between;
+    font-weight: bold;
+    margin: 5%;
+    font-size: 15px;
 }
 
 /*conteneur*/
@@ -177,7 +180,7 @@ main .conteneur{
 .hebergements figure .image{
     height: 115px;
     border: 1px white solid;
-    border-radius: 10px 10px 0 0;
+    border-radius: 15px 15px 0 0;
 }
 .hebergements figure .image img{
     width: 100%;
@@ -212,7 +215,7 @@ main .conteneur{
     /*height: 115px;*/
     width: 40%;
     border: 1px white solid;
-    border-radius: 10px;
+    border-radius: 15px 0 0 15px;
     overflow: hidden;
     display: flex;
     align-items: flex-start;
@@ -223,6 +226,7 @@ main .conteneur{
 .populaires figure figcaption{
     height: 80px;
     width: 58%;
+    margin-left: 5%;
 }
 .populaires figure figcaption h2{
     margin-bottom: 5px;
@@ -232,6 +236,7 @@ main .conteneur{
     margin: 0;
     margin-bottom: 20px;
     width: 80%;
+    font-weight: normal;
 }
 .populaires figure figcaption .fa-star-blue{
     color: #0065FC;
