@@ -24,11 +24,11 @@ header {
     overflow: hidden;
     min-height: 120px;
 }
-/*.image img{
+.image img{
     flex-shrink: 0;
     min-width: 100%;
     min-height: 100%
-}*/
+}
 .fa-star{
     color: silver;
 }
@@ -153,6 +153,9 @@ main aside{
 main aside p{
     display: flex;
     justify-content: space-between;
+    font-weight: bold;
+    margin: 5%;
+    font-size: 15px;
 }
 
 /*conteneur*/
@@ -177,7 +180,7 @@ main .conteneur{
 .hebergements figure .image{
     height: 115px;
     border: 1px white solid;
-    border-radius: 10px 10px 0 0;
+    border-radius: 15px 15px 0 0;
 }
 .hebergements figure .image img{
     width: 100%;
@@ -212,17 +215,19 @@ main .conteneur{
     /*height: 115px;*/
     width: 40%;
     border: 1px white solid;
-    border-radius: 10px;
+    border-radius: 15px 0 0 15px;
     overflow: hidden;
     display: flex;
     align-items: flex-start;
 }
 .populaires figure .image img{
-    width: 100%;
+    width: auto;
+    height: 100%;
 }
 .populaires figure figcaption{
     height: 80px;
     width: 58%;
+    margin-left: 5%;
 }
 .populaires figure figcaption h2{
     margin-bottom: 5px;
@@ -232,6 +237,7 @@ main .conteneur{
     margin: 0;
     margin-bottom: 20px;
     width: 80%;
+    font-weight: normal;
 }
 .populaires figure figcaption .fa-star-blue{
     color: #0065FC;
@@ -249,15 +255,17 @@ main .conteneur{
 .activites{
     display: flex;
     flex-direction: row;
+    height: 195px;
+}
+.activites img{
+    display: none;
 }
 .activites figure{
-    height: 195px;
     border-radius: 10px;
     background-color: white;
-    box-shadow: 2px 2px 5px silver
-}
-.activites .colonne .image img{
-    bottom: 60px;
+    box-shadow: 2px 2px 5px silver;
+    border: 2px solid blue;
+
 }
 .activites .colonne_simple figure{
     height: 100%;
@@ -266,13 +274,14 @@ main .conteneur{
     height: 50%;
 }
 .activites figure .image{
-    height: 114px;
-    border: hidden;
+    height: 100%;
     border-radius: 10px;
+    border: 2px solid red;
+
 }
-.activites figure .image img{
+/*.activites figure .image img{
     width: 100%;
-}
+}*/
 .activites figure figcaption{
     height: 80px;
 }
@@ -286,10 +295,10 @@ main .conteneur{
 /*footer*/
 footer{
     display: flex;
-    position: relative;
+    justify-content: space-between;
+    margin-top: 200px;
 }
-footer #conteneur{
-    display: flex;
-    flex-direction: column;
-
+footer a{
+    text-decoration: none;
+    color: black;
 }
