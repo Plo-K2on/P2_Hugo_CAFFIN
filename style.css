@@ -221,7 +221,8 @@ main .conteneur{
     align-items: flex-start;
 }
 .populaires figure .image img{
-    width: 100%;
+    width: auto;
+    height: 100%;
 }
 .populaires figure figcaption{
     height: 80px;
@@ -254,15 +255,17 @@ main .conteneur{
 .activites{
     display: flex;
     flex-direction: row;
+    height: 195px;
+}
+.activites img{
+    display: none;
 }
 .activites figure{
-    height: 195px;
     border-radius: 10px;
     background-color: white;
-    box-shadow: 2px 2px 5px silver
-}
-.activites .colonne .image img{
-    bottom: 60px;
+    box-shadow: 2px 2px 5px silver;
+    border: 2px solid blue;
+
 }
 .activites .colonne_simple figure{
     height: 100%;
@@ -271,13 +274,14 @@ main .conteneur{
     height: 50%;
 }
 .activites figure .image{
-    height: 114px;
-    border: hidden;
+    height: 100%;
     border-radius: 10px;
+    border: 2px solid red;
+
 }
-.activites figure .image img{
+/*.activites figure .image img{
     width: 100%;
-}
+}*/
 .activites figure figcaption{
     height: 80px;
 }
@@ -291,10 +295,10 @@ main .conteneur{
 /*footer*/
 footer{
     display: flex;
-    position: relative;
+    justify-content: space-between;
+    margin-top: 200px;
 }
-footer #conteneur{
-    display: flex;
-    flex-direction: column;
-
+footer a{
+    text-decoration: none;
+    color: black;
 }
