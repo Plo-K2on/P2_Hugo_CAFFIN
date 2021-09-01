@@ -1,0 +1,309 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("./Raleway/Raleway-VariableFont_wght.ttf");
+    font-weight: 100 1000;
+}
+
+body {
+    color: black;
+    font-size: 12px;
+    font-family: "Raleway", sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+header {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+/* CSS global */
+.image{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    min-height: 100px;
+}
+.image img{
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+.fa-star{
+    color: silver;
+}
+
+/* Navigation */
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 0;
+}
+nav ul li{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+}
+nav ul li:hover{
+    border-top: 1px solid #0065FC;
+}
+nav ul li a{
+    text-decoration: none ;
+}
+
+/* rechercher */
+#recherche {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    border-radius: 15px;
+    border: 1px solid #F2F2F2 ;
+    width: 420px;
+    overflow: hidden;
+    background-color: #F2F2F2;
+}
+#recherche i {
+    width: 50px;
+    font-size: 25px;
+    color: black;
+    margin: 0;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+#recherche input {
+    width: 60%;
+    padding: 3%;
+    margin: 0;
+    color: black;
+    border: hidden;
+    font-weight: bold;
+}
+#recherche input::placeholder{
+    color:black;
+}
+#recherche p {
+    background-color: #0065FC;
+    color: white;
+    padding: 0;
+    margin: auto;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Filtres */
+#filtres{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#filtres ul{
+    display: flex;
+    flex-direction: row;
+}
+#filtres ul li{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    border-color: #F2F2F2;
+    border: 2px solid ;
+    border-radius: 50px;
+    height: 40px;
+    align-items: center;
+    border-color: #F2F2F2;
+}
+#filtres ul li i{
+    padding: 15px;
+    background-color: #DEEBFF;
+    border-radius: 20px;
+    color: #0065FC;
+}
+
+main figure{
+    border: 5px white solid;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 5px silver;
+}
+
+/* Hebergement et Populaire */
+main {
+    display: flex;
+    justify-content: space-between;
+}
+main section{
+    width: 65%;
+}
+main section h2{
+    margin: 3% 3% 3% 3%;
+    font-size: 15px;
+}
+main aside{
+    width: 32%;
+}
+main aside p{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin: 5%;
+    font-size: 15px;
+}
+
+/*conteneur*/
+main .conteneur{
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+  
+/* Hebergements */
+.hebergements{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.hebergements figure{
+    max-width: 28%;
+    height: 215px;
+    overflow: hidden;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.hebergements figure .image{
+    height: 115px;
+    border: 1px white solid;
+    border-radius: 15px 15px 0 0;
+}
+.hebergements figure .image img{
+    width: 100%;
+}
+.hebergements figure figcaption{
+    height: 80px;
+    margin: 10px;
+}
+.hebergements figure figcaption p{
+    font-size: 12px;
+    margin: 5px 0;
+}
+.hebergements figure figcaption h2{
+    font-size: 14px;
+    margin: 0;
+}
+.hebergements figure figcaption .fa-star-blue{
+    color: #0065FC;
+}
+
+/* Les plus populaires */
+.populaires{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.populaires figure{
+    height: 130px;
+    display: flex;
+}
+.populaires figure .image{
+    width: 40%;
+    border: 1px white solid;
+    border-radius: 15px 0 0 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+}
+.populaires figure .image img{
+    width: auto;
+    height: 100%;
+}
+.populaires figure figcaption{
+    height: 80px;
+    width: 58%;
+    margin-left: 5%;
+}
+.populaires figure figcaption h2{
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+.populaires figure figcaption p{
+    margin: 0;
+    margin-bottom: 20px;
+    width: 80%;
+    font-weight: normal;
+}
+.populaires figure figcaption .fa-star-blue{
+    color: #0065FC;
+}
+
+/* Activités */
+.activites{
+    display: flex;
+    flex-direction: row;
+    height: 450px;
+    justify-content: space-between;
+    align-content: space-between;
+    /* border: 1px solid yellow; */
+}
+.activites .colonne{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 23%;
+    /* border: 2px solid green; */
+}
+.activites .colonne figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 5px silver;
+    /* border: 2px solid blue; */
+}
+
+.activites .colonne figure .image{
+    display: flex;
+    justify-content: center;
+    height: 390px;
+    border-radius: 10px;
+    /* border: 2px solid red; */
+    align-content: center;
+    align-items: center;
+}
+
+.activites .colonne figure figcaption{
+    height: 60px;
+    /* border: 1px solid black; */
+}
+.activites .colonne_double figure .image_h180{
+    height: 180px;
+}
+.activites .colonne_double figure .image_h110{
+    height: 110px;
+}
+.activites .colonne_double figure .image_h140{
+    height: 140px;
+}
+.activites .colonne_double figure .image_h150{
+    height: 150px;
+}
+
+/*footer*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 250px;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}

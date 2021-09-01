@@ -254,59 +254,67 @@ main .conteneur{
 .activites{
     display: flex;
     flex-direction: row;
-    height: 195px;
+    height: 450px;
+    justify-content: space-between;
+    align-content: space-between;
+    /* border: 1px solid yellow; */
 }
-.activites img{ /*à supprimer à la fin*/
-    display: none;
-    width: 100%;
+.conteneur p{
+    font-size: 15px;
 }
 .activites .colonne{
-    border: 2px solid green;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    width: 23%;
+    /* border: 2px solid green; */
 }
-.activites .colonne_simple figure{
+.activites .colonne figure{
     display: flex;
     flex-direction: column;
-    height: 100%;
-    margin: 0 10px 0 10px;
-    width: 70%;
-}
-.activites .colonne_double figure{
-    height: 45%;
-    margin: 0 10px 10px 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.activites .colonne_double figure .image img{
-    height: 50px;
-}
-.activites .colonne_double figure figcaption{
-    position: relative;
-    min-height: 130px;
-}
-.activites figure{
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
     border-radius: 10px;
     background-color: white;
     box-shadow: 2px 2px 5px silver;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
-.activites figure .image{
-    height: 100%;
+
+.activites .colonne figure .image{
+    display: flex;
+    justify-content: center;
+    height: 390px;
     border-radius: 10px;
     /* border: 2px solid red; */
+    align-content: center;
+    align-items: center;
 }
-/*.activites figure .image img{
-    width: 100%;
-}*/
-.activites figure figcaption{
-    height: 80px;
+
+.activites .colonne figure .image img {
+    object-fit: cover;
+    max-width: 100%;
 }
-.conteneur .activites{
-    display: flex;
-    align-content: space-around;
-    border-radius: 10px;
+
+.activites .colonne figure figcaption{
+    height: 60px;
+    margin: 0 0 0 20px;
+    /* border: 1px solid black; */
+}
+.activites .colonne figure figcaption h2{
+    font-size: 15px;
+}
+.activites .colonne_double figure .image_h180{
+    height: 180px;
+}
+.activites .colonne_double figure .image_h110{
+    height: 110px;
+}
+.activites .colonne_double figure .image_h140{
+    height: 140px;
+}
+.activites .colonne_double figure .image_h150{
+    height: 150px;
 }
 
 /*footer*/
@@ -314,6 +322,10 @@ footer{
     display: flex;
     justify-content: space-between;
     margin-top: 250px;
+    background-color: #F2F2F2;
+    margin-top: 60px;
+    padding-bottom: 50px;
+
 }
 footer a{
     text-decoration: none;
