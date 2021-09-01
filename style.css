@@ -39,6 +39,9 @@ nav {
     top: 0;
     right: 0;
 }
+h2{
+    margin-bottom: 0px;
+}
 nav ul{
     display: flex;
     flex-direction: row;
@@ -56,6 +59,13 @@ nav ul li:hover{
 nav ul li a{
     text-decoration: none ;
 }
+nav ul li a p {
+    color: blue;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    color: red;
+}
 
 /* rechercher */
 #recherche {
@@ -70,9 +80,9 @@ nav ul li a{
 }
 #recherche i {
     width: 50px;
-    font-size: 25px;
+    font-size: 15px;
     color: black;
-    margin: 0;
+    margin-top: 8px;
     text-align: center;
     border-radius: 10px;
     padding: 10px 0;
@@ -98,6 +108,8 @@ nav ul li a{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    font-weight: bold;
+    font-size: larger;
 }
 
 /* Filtres */
@@ -105,6 +117,8 @@ nav ul li a{
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: 13px;
+    font-weight: bold;
 }
 #filtres ul{
     display: flex;
@@ -114,18 +128,31 @@ nav ul li a{
     display: flex;
     flex-direction: row;
     margin-left: 20px;
-    border-color: #F2F2F2;
-    border: 2px solid ;
+    border: 2px solid #F2F2F2;
     border-radius: 50px;
     height: 40px;
     align-items: center;
-    border-color: #F2F2F2;
+    padding: 0 20px 0 0px;
 }
 #filtres ul li i{
     padding: 15px;
     background-color: #DEEBFF;
     border-radius: 20px;
     color: #0065FC;
+    margin-right: 10px;
+}
+/*infos*/
+#info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#info i{
+    border: 2px solid #F2F2F2;
+    border-radius: 50px;
+    color: #0065FC;
+    margin-right: 15px;
+    padding: 5px 8px 5px 8px
 }
 
 main figure{
@@ -139,6 +166,7 @@ main figure{
 main {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 main section{
     width: 65%;
@@ -230,13 +258,14 @@ main .conteneur{
 }
 .populaires figure figcaption h2{
     margin-bottom: 5px;
-    font-size: 15px;
+    font-size: 14px;
 }
 .populaires figure figcaption p{
-    margin: 0;
-    margin-bottom: 20px;
+    margin: 0 0 30px 0;
+    margin-bottom: 45px;
     width: 80%;
     font-weight: normal;
+    font-size: 12px;
 }
 .populaires figure figcaption .fa-star-blue{
     color: #0065FC;
@@ -285,7 +314,7 @@ main .conteneur{
     display: flex;
     justify-content: center;
     height: 390px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     /* border: 2px solid red; */
     align-content: center;
     align-items: center;
@@ -297,6 +326,8 @@ main .conteneur{
 }
 
 .activites .colonne figure figcaption{
+    display: flex;
+    align-items: center;
     height: 60px;
     margin: 0 0 0 20px;
     /* border: 1px solid black; */
@@ -323,11 +354,27 @@ footer{
     justify-content: space-between;
     margin-top: 250px;
     background-color: #F2F2F2;
-    margin-top: 60px;
-    padding-bottom: 50px;
+    margin: 60px -50px  -50px;
+    padding: 60px;
 
+}
+footer h2{
+    font-size: initial;
 }
 footer a{
     text-decoration: none;
     color: black;
+}
+
+/* mobile */
+@media screen and (max-width: 870px) {
+    #filtres {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #filtres ul{
+        flex-wrap: wrap;
+
+    }
 }
