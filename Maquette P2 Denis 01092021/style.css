@@ -22,7 +22,7 @@ header {
     display: flex;
     align-items: center;
     overflow: hidden;
-    min-height: 100px;
+    min-height: 120px;
 }
 .image img{
     flex-shrink: 0;
@@ -38,6 +38,10 @@ nav {
     position: absolute;
     top: 0;
     right: 0;
+    font-size: 14px;
+}
+h2{
+    margin-bottom: 0px;
 }
 nav ul{
     display: flex;
@@ -47,8 +51,9 @@ nav ul{
 }
 nav ul li{
     margin-left: 20px;
-    display: flex;
-    flex-direction: row;
+    list-style: none;
+    /* display: flex;
+    flex-direction: row; */
 }
 nav ul li:hover{
     border-top: 1px solid #0065FC;
@@ -56,6 +61,13 @@ nav ul li:hover{
 nav ul li a{
     text-decoration: none ;
 }
+nav ul li a p {
+    color: blue;
+}
+/* nav ul li a:hover{
+    text-decoration: underline;
+    color: red;
+} */
 
 /* rechercher */
 #recherche {
@@ -70,9 +82,9 @@ nav ul li a{
 }
 #recherche i {
     width: 50px;
-    font-size: 25px;
+    font-size: 15px;
     color: black;
-    margin: 0;
+    margin-top: 8px;
     text-align: center;
     border-radius: 10px;
     padding: 10px 0;
@@ -98,6 +110,8 @@ nav ul li a{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    font-weight: bold;
+    font-size: larger;
 }
 
 /* Filtres */
@@ -105,6 +119,8 @@ nav ul li a{
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: 13px;
+    font-weight: bold;
 }
 #filtres ul{
     display: flex;
@@ -114,18 +130,31 @@ nav ul li a{
     display: flex;
     flex-direction: row;
     margin-left: 20px;
-    border-color: #F2F2F2;
-    border: 2px solid ;
+    border: 2px solid #F2F2F2;
     border-radius: 50px;
     height: 40px;
     align-items: center;
-    border-color: #F2F2F2;
+    padding: 0 20px 0 0px;
 }
 #filtres ul li i{
     padding: 15px;
     background-color: #DEEBFF;
     border-radius: 20px;
     color: #0065FC;
+    margin-right: 10px;
+}
+/*infos*/
+#info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#info i{
+    border: 2px solid #F2F2F2;
+    border-radius: 50px;
+    color: #0065FC;
+    margin-right: 15px;
+    padding: 5px 8px 5px 8px
 }
 
 main figure{
@@ -139,12 +168,13 @@ main figure{
 main {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 main section{
     width: 65%;
 }
 main section h2{
-    margin: 3% 3% 3% 3%;
+    margin: 2% 3% 2% 3%;
     font-size: 15px;
 }
 main aside{
@@ -154,7 +184,6 @@ main aside p{
     display: flex;
     justify-content: space-between;
     font-weight: bold;
-    margin: 5%;
     font-size: 15px;
 }
 
@@ -186,15 +215,20 @@ main .conteneur{
     width: 100%;
 }
 .hebergements figure figcaption{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 80px;
-    margin: 10px;
+    margin: 10px 10px 0px 10px;
 }
 .hebergements figure figcaption p{
-    font-size: 12px;
+    font-size: 13px;
     margin: 5px 0;
+    padding-bottom: 10px;
+    padding-top: 3px;
 }
 .hebergements figure figcaption h2{
-    font-size: 14px;
+    font-size: 17px;
     margin: 0;
 }
 .hebergements figure figcaption .fa-star-blue{
@@ -208,7 +242,7 @@ main .conteneur{
     flex-direction: column;
 }
 .populaires figure{
-    height: 130px;
+    height: 155px;
     display: flex;
 }
 .populaires figure .image{
@@ -224,19 +258,20 @@ main .conteneur{
     height: 100%;
 }
 .populaires figure figcaption{
-    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     width: 58%;
     margin-left: 5%;
 }
 .populaires figure figcaption h2{
-    margin-bottom: 5px;
-    font-size: 15px;
+    font-size: 17px;
 }
 .populaires figure figcaption p{
-    margin: 0;
-    margin-bottom: 20px;
     width: 80%;
     font-weight: normal;
+    font-size: 12px;
 }
 .populaires figure figcaption .fa-star-blue{
     color: #0065FC;
@@ -250,6 +285,9 @@ main .conteneur{
     justify-content: space-between;
     align-content: space-between;
     /* border: 1px solid yellow; */
+}
+.conteneur p{
+    font-size: 15px;
 }
 .activites .colonne{
     display: flex;
@@ -274,15 +312,26 @@ main .conteneur{
     display: flex;
     justify-content: center;
     height: 390px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     /* border: 2px solid red; */
     align-content: center;
     align-items: center;
 }
 
+.activites .colonne figure .image img {
+    object-fit: cover;
+    max-width: 100%;
+}
+
 .activites .colonne figure figcaption{
+    display: flex;
+    align-items: center;
     height: 60px;
+    margin: 0 0 0 20px;
     /* border: 1px solid black; */
+}
+.activites .colonne figure figcaption h2{
+    font-size: 15px;
 }
 .activites .colonne_double figure .image_h180{
     height: 180px;
@@ -302,8 +351,56 @@ footer{
     display: flex;
     justify-content: space-between;
     margin-top: 250px;
+    background-color: #F2F2F2;
+    margin: 60px -50px  -50px;
+    padding: 60px;
+
+}
+footer h2{
+    font-size: initial;
 }
 footer a{
     text-decoration: none;
     color: black;
+}
+
+/* mobile */
+@media screen and (max-width: 870px) {
+    body{
+        margin: 10px 0 20px 0;
+    }
+    nav {
+        position: relative;
+        width: 100%;
+        border-bottom: 2px solid lightgray;
+    }
+    nav ul{
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+    nav ul li {
+        margin-left: 0;
+    }
+    #recherche{
+        width: 100%;
+    }
+    nav ul li .inscrire{
+        position: absolute;
+        top: -40px;
+        right: 20px;
+    }
+    #filtres {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #filtres ul{
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
+    #filtres ul li{
+        margin-bottom: 5px;
+    }
 }
