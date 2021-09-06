@@ -432,6 +432,7 @@ footer a{
         width: 90%;
         margin-bottom: 40px;
     }
+    
     .conteneur p{
         margin: 30px 40px 10px 30px
     }
@@ -441,7 +442,6 @@ footer a{
         flex-wrap: wrap;
         margin-left: -20px;
         width: 41%;
-        
     }
     .populaires figure{
         width: 200%;
@@ -460,10 +460,16 @@ footer a{
     .populaires figure figcaption p{
         margin: 10px 0 5px -5px;
     }
+
+
+    main .conteneur{
+        width: 90%;
+        background: none;
+    }
     .hebergements{
         flex-direction: column;
-        width: 410%;
-        margin-left: 20px;
+        width: 300%;
+        margin-left: 15px;
     }
     .hebergements figure{
 
@@ -474,7 +480,22 @@ footer a{
     .hebergements figure figcaption p{
         
     }
-    .hebergements figure figcaption .fa-star-blue{
+    
+
+    .activites{
+        flex-direction: column;
+        width: 330%;
+        margin: 0 20px 0 20px;
+    }
+    .activites .colonne figure{
+        margin-bottom: 20px;
+    }
+    .activites .colonne figure .image{
+        height: 10px;
+    }
+
+
+    footer{
         
     }
 }
