@@ -382,8 +382,17 @@ footer a{
     nav ul li {
         margin-left: 0;
     }
+    h2 {
+        margin: 25px 25px 15px 20px;
+        font-size: 24px;
+    }
+    p {
+        margin: 0 25px 30px 20px;
+        font-size: 15px;
+    }
     #recherche{
         width: 100%;
+        margin: 0 0 0 20px;
     }
     nav ul li .inscrire{
         position: absolute;
@@ -396,11 +405,76 @@ footer a{
         flex-direction: column;
         align-items: flex-start;
     }
+    #filtres span{
+        margin: 0 0 0 20px;
+    }
     #filtres ul{
         flex-wrap: wrap;
-        padding-left: 0;
+        margin-left: -40px;
+        font-size: 15px;
     }
     #filtres ul li{
-        margin-bottom: 5px;
+        margin-bottom: 10px;
+    }
+    #info p{
+        margin: 0 0 20px 0;
+        font-size: 17px;
+    }
+    #info i{
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    main aside {
+        width: 90%;
+        margin-bottom: 40px;
+    }
+    .conteneur p{
+        margin: 30px 40px 10px 30px
+    }
+    .populaires{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: -20px;
+        width: 41%;
+        
+    }
+    .populaires figure{
+        width: 200%;
+        height: 120px;
+    }
+    .populaires figure .image{
+        width: 40%;
+    }
+    /*.populaires figure figcaption{
+
+    }*/
+    .populaires figure figcaption h2{
+        margin: 10px 0 5px -5px;
+        font-size: 14px
+    }
+    .populaires figure figcaption p{
+        margin: 10px 0 5px -5px;
+    }
+    .hebergements{
+        flex-direction: column;
+        width: 410%;
+        margin-left: 20px;
+    }
+    .hebergements figure{
+
+    }
+    .hebergements figure figcaption{
+        margin: 5px 10px 0px 10px;
+    }
+    .hebergements figure figcaption p{
+        
+    }
+    .hebergements figure figcaption .fa-star-blue{
+        
     }
 }
