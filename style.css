@@ -486,6 +486,7 @@ footer a{
         flex-direction: column;
         width: 330%;
         margin: 0 20px 0 20px;
+        height: auto;
     }
     .activites .colonne figure{
         margin-bottom: 20px;
@@ -496,6 +497,6 @@ footer a{
 
 
     footer{
-        
+        flex-direction: column;
     }
 }
