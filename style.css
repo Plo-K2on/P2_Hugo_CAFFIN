@@ -427,6 +427,7 @@ footer a{
     main {
         display: flex;
         flex-direction: column-reverse;
+        width: 115%;
     }
     main aside {
         width: 90%;
@@ -471,20 +472,20 @@ footer a{
         width: 300%;
         margin-left: 15px;
     }
-    .hebergements figure{
+    /* .hebergements figure{
 
-    }
+    } */
     .hebergements figure figcaption{
         margin: 5px 10px 0px 10px;
     }
-    .hebergements figure figcaption p{
+    /* .hebergements figure figcaption p{
         
-    }
+    } */
     
 
     .activites{
         flex-direction: column;
-        width: 330%;
+        width: 380%;
         margin: 0 20px 0 20px;
         height: auto;
     }
@@ -494,9 +495,15 @@ footer a{
     .activites .colonne figure .image{
         height: 10px;
     }
+    .activites .colonne figure figcaption h2 {
+        margin: -2px 0 0 0;
+    }
 
 
     footer{
         flex-direction: column;
+    }
+    footer p{
+        margin: 0 0 15px 20px;
     }
 }
