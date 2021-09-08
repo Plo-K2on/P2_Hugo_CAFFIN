@@ -64,10 +64,6 @@ nav ul li a{
 nav ul li a p {
     color: blue;
 }
-nav ul li a:hover{
-    text-decoration: underline;
-    color: red;
-}
 
 /* rechercher */
 #recherche {
@@ -138,7 +134,15 @@ nav ul li a:hover{
     height: 40px;
     align-items: center;
     padding: 0 20px 0 0px;
+    color: black;
 }
+#filtres ul li a{
+    text-decoration: none;
+}
+#filtres ul li a:hover{
+    color: red;
+}
+
 #filtres ul li i{
     padding: 15px;
     background-color: #DEEBFF;
