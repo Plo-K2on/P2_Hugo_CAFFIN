@@ -100,7 +100,7 @@ nav ul li a:hover{
 #recherche input::placeholder{
     color:black;
 }
-#recherche p {
+#recherche button {
     background-color: #0065FC;
     color: white;
     padding: 0;
@@ -112,6 +112,9 @@ nav ul li a:hover{
     align-items: center;
     font-weight: bold;
     font-size: larger;
+}
+#recherche .mobile{
+    display: none;
 }
 
 /* Filtres */
@@ -394,6 +397,12 @@ footer a{
         width: 100%;
         margin: 0 0 0 20px;
     }
+    #recherche .mobile{
+        display: block;
+    }
+    #recherche .desktop{
+        display: none;
+    }
     nav ul li .inscrire{
         position: absolute;
         top: -40px;
@@ -427,7 +436,7 @@ footer a{
     main {
         display: flex;
         flex-direction: column-reverse;
-        width: 115%;
+        width: 100%;
     }
     main aside {
         width: 90%;
@@ -437,20 +446,14 @@ footer a{
     .conteneur p{
         margin: 30px 40px 10px 30px
     }
-    .populaires{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin-left: -20px;
-        width: 41%;
-    }
+
     .populaires figure{
-        width: 200%;
+        width: 100%;
         height: 120px;
     }
-    .populaires figure .image{
+    /* .populaires figure .image{
         width: 40%;
-    }
+    } */
     /*.populaires figure figcaption{
 
     }*/
