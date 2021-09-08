@@ -59,7 +59,7 @@ nav ul li:hover{
     border-top: 1px solid #0065FC;
 }
 nav ul li a{
-    text-decoration: none ;
+    text-decoration: none;
 }
 nav ul li a p {
     color: blue;
@@ -86,12 +86,13 @@ nav ul li a p {
     padding: 10px 0;
 }
 #recherche input {
-    width: 60%;
+    width: 66%;
     padding: 3%;
     margin: 0;
     color: black;
     border: hidden;
     font-weight: bold;
+    font-size: 15px;
 }
 #recherche input::placeholder{
     color:black;
@@ -99,15 +100,10 @@ nav ul li a p {
 #recherche button {
     background-color: #0065FC;
     color: white;
-    padding: 0;
-    margin: auto;
     width: 150px;
-    height: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     font-weight: bold;
-    font-size: larger;
+    font-size: 16px;
+    border: none;
 }
 #recherche .mobile{
     display: none;
@@ -357,9 +353,8 @@ main .conteneur{
 footer{
     display: flex;
     justify-content: space-between;
-    margin-top: 250px;
+    margin-top: 50px;
     background-color: #F2F2F2;
-    margin: 60px -50px  -50px;
     padding: 60px;
 
 }
@@ -374,35 +369,56 @@ footer a{
 /* mobile */
 @media screen and (max-width: 870px) {
     body{
-        margin: 10px 0 20px 0;
+        margin: 10px 10px 10px 10px;
     }
     nav {
         position: relative;
         width: 100%;
         border-bottom: 2px solid lightgray;
+        margin: 0 -10px 0 -10px;
     }
     nav ul{
+        display: flex;
         width: 100%;
-        justify-content: space-between;
         margin-bottom: 0;
+        padding: 0;
     }
-    nav ul li {
-        margin-left: 0;
+    nav ul .mobile {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        margin: 0;
+        padding: 0;
     }
-    h2 {
+    nav ul li:hover {
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+    }
+    /* h2 {
         margin: 25px 25px 15px 20px;
         font-size: 24px;
     }
     p {
         margin: 0 25px 30px 20px;
         font-size: 15px;
-    }
+    } */
     #recherche{
         width: 100%;
-        margin: 0 0 0 20px;
+    }
+    #recherche i {
+        width: 30px;
+        margin: 10px 10px 0 10px;
     }
     #recherche .mobile{
         display: block;
+        width: 60px;
+        border-radius: 20px;
+        
+    }
+    #recherche .mobile i{
+        color: white;
+        margin-bottom: 5px;
+        margin-top: 7px;
     }
     #recherche .desktop{
         display: none;
@@ -412,6 +428,10 @@ footer a{
         top: -40px;
         right: 20px;
     }
+    nav ul li .inscrire:hover{
+        border-top: 1px solid #0065FC;
+    }
+
     #filtres {
         margin-top: 20px;
         display: flex;
@@ -434,7 +454,7 @@ footer a{
         font-size: 17px;
     }
     #info i{
-        margin-left: 20px;
+        margin: 0 0 20px 0;
         margin-bottom: 20px;
     }
     main {
@@ -443,58 +463,55 @@ footer a{
         width: 100%;
     }
     main aside {
-        width: 90%;
-        margin-bottom: 40px;
+        width: 100%;
+        /* margin-bottom: 40px; */
     }
     
-    .conteneur p{
+    /* .conteneur p{
         margin: 30px 40px 10px 30px
-    }
+    } */
 
     .populaires figure{
-        width: 100%;
+        /* width: 100%; */
         height: 120px;
+        margin: 0;
     }
-    /* .populaires figure .image{
-        width: 40%;
-    } */
-    /*.populaires figure figcaption{
-
-    }*/
     .populaires figure figcaption h2{
-        margin: 10px 0 5px -5px;
+        /* margin: 10px 0 5px -5px; */
         font-size: 14px
     }
-    .populaires figure figcaption p{
+    /* .populaires figure figcaption p{
         margin: 10px 0 5px -5px;
-    }
+    } */
 
 
     main .conteneur{
-        width: 90%;
+        width: 100%;
         background: none;
     }
     .hebergements{
         flex-direction: column;
-        width: 300%;
-        margin-left: 15px;
+        /* width: 300%;
+        margin-left: 15px; */
     }
-    /* .hebergements figure{
-
-    } */
-    .hebergements figure figcaption{
+    .hebergements figure{
+        max-width: unset;
+    }
+    /* .hebergements figure figcaption{
         margin: 5px 10px 0px 10px;
     }
-    /* .hebergements figure figcaption p{
+    .hebergements figure figcaption p{
         
     } */
     
 
     .activites{
         flex-direction: column;
-        width: 380%;
-        margin: 0 20px 0 20px;
         height: auto;
+        margin: 0;
+    }
+    .activites .colonne{
+        width: 100%;
     }
     .activites .colonne figure{
         margin-bottom: 20px;
@@ -502,15 +519,18 @@ footer a{
     .activites .colonne figure .image{
         height: 10px;
     }
-    .activites .colonne figure figcaption h2 {
-        margin: -2px 0 0 0;
-    }
-
 
     footer{
         flex-direction: column;
+        padding: 20px 20px;
+    }
+    
+    footer h2{
+        margin: 20px 0 15px 20px;
+        font-size: 16px;
     }
     footer p{
         margin: 0 0 15px 20px;
+        font-size: 14px;
     }
 }
