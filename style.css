@@ -16,6 +16,12 @@ header {
     position: relative;
     flex-direction: column;
 }
+header>h2{
+    font-size: 20px;
+}
+header>p{
+    font-size: 16px;
+}
 
 /* CSS global */
 .image{
@@ -114,7 +120,7 @@ nav ul li a p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: bold;
 }
 #filtres ul{
@@ -178,23 +184,26 @@ main section{
     width: 65%;
 }
 main section h2{
-    margin: 2% 3% 2% 3%;
+    margin: 10px 20px;
     font-size: 15px;
 }
 main aside{
     width: 32%;
 }
-main aside p{
+main aside h2{
     display: flex;
     justify-content: space-between;
     font-weight: bold;
     font-size: 15px;
+    /* margin: 10px 20px; */
+    margin: 10px 0 0 0;
 }
 
 /*conteneur*/
 main .conteneur{
     background-color: #F2F2F2;
     border-radius: 10px;
+    padding-bottom: 20px;
 }
   
 /* Hebergements */
@@ -232,11 +241,12 @@ main .conteneur{
     padding-top: 3px;
 }
 .hebergements figure figcaption h2{
-    font-size: 17px;
+    font-size: 14px;
     margin: 0;
 }
 .hebergements figure figcaption .fa-star-blue{
     color: #0065FC;
+    margin-bottom: 8px;
 }
 
 /* Les plus populaires */
@@ -248,6 +258,7 @@ main .conteneur{
 .populaires figure{
     height: 155px;
     display: flex;
+    margin: 10px 30px;
 }
 .populaires figure .image{
     width: 40%;
@@ -279,6 +290,7 @@ main .conteneur{
 }
 .populaires figure figcaption .fa-star-blue{
     color: #0065FC;
+    margin-bottom: 8px;
 }
 
 /* Activités */
@@ -288,10 +300,19 @@ main .conteneur{
     height: 450px;
     justify-content: space-between;
     align-content: space-between;
+    margin-top: 20px;
     /* border: 1px solid yellow; */
 }
 .conteneur p{
     font-size: 15px;
+}
+.conteneur h2.titre {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 20px;
+}
+.conteneur h2#activites.titre {
+    margin-left: 0 ;
 }
 .activites .colonne{
     display: flex;
@@ -367,16 +388,43 @@ footer a{
     color: black;
 }
 
+/*footer*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    background-color: #F2F2F2;
+    padding: 60px;
+    margin-left: -50px;
+    margin-right: -50px;
+}
+footer h2{
+    font-size: initial;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
 /* mobile */
 @media screen and (max-width: 870px) {
     body{
-        margin: 10px 10px 10px 10px;
+        margin: 10px 0 10px;
+    }
+    header>a {
+        margin: 10px 20px ;
+    }
+    header>h2 {
+        margin: 20px 20px 0 20px;
+    }
+    header>p {
+        margin: 5px 20px 20px 20px ;
     }
     nav {
         position: relative;
         width: 100%;
         border-bottom: 2px solid lightgray;
-        margin: 0 -10px 0 -10px;
+        margin: 0;
     }
     nav ul{
         display: flex;
@@ -395,16 +443,13 @@ footer a{
         border-top: none;
         border-bottom: 2px solid #0065FC;
     }
-    /* h2 {
-        margin: 25px 25px 15px 20px;
-        font-size: 24px;
+    
+    nav ul li.desktop {
+        margin: 0;
     }
-    p {
-        margin: 0 25px 30px 20px;
-        font-size: 15px;
-    } */
     #recherche{
-        width: 100%;
+        max-width: 90%;
+        margin: 10px auto;
     }
     #recherche i {
         width: 30px;
@@ -413,6 +458,7 @@ footer a{
     #recherche .mobile{
         display: block;
         width: 60px;
+        max-width: 60px;
         border-radius: 20px;
         
     }
@@ -420,19 +466,19 @@ footer a{
         color: white;
         margin-bottom: 5px;
         margin-top: 7px;
+
     }
     #recherche .desktop{
         display: none;
     }
     nav ul li .inscrire{
         position: absolute;
-        top: -40px;
+        top: -50px;
         right: 20px;
     }
     nav ul li .inscrire:hover{
         border-top: 1px solid #0065FC;
     }
-
     #filtres {
         margin-top: 20px;
         display: flex;
@@ -450,28 +496,25 @@ footer a{
     #filtres ul li{
         margin-bottom: 10px;
     }
+    #info {
+        margin: 10px 20px;
+        align-items: flex-start;
+    }
     #info p{
         margin: 0 0 20px 0;
         font-size: 17px;
     }
     #info i{
-        margin: 0 0 20px 0;
+        margin: 0 10px 20px 0;
         margin-bottom: 20px;
     }
     main {
         display: flex;
         flex-direction: column-reverse;
         width: 100%;
-    }
-    main aside {
-        width: 100%;
-        /* margin-bottom: 40px; */
-        
+        margin-bottom: 20px;
     }
     
-    /* .conteneur p{
-        margin: 30px 40px 10px 30px
-    } */
     main .conteneur{
         width: 100%;
         background: none;
@@ -479,41 +522,34 @@ footer a{
         border-radius: 0px;
         margin-bottom: 15px;
     }
-    
+    main>section.conteneur {
+        background-color: white;
+    }
+    main aside .titre {
+        margin: 20px;
+    }
     .populaires figure{
-        /* width: 100%; */
         height: 120px;
-        margin: 0 0 13px 0;
+        margin: 0 20px 13px 20px;
     }
-    .populaires figure figcaption h2{
-        /* margin: 10px 0 5px -5px; */
-        font-size: 14px
-    }
-    /* .populaires figure figcaption p{
-        margin: 10px 0 5px -5px;
-    } */
-
-    
     .hebergements{
         flex-direction: column;
-        /* width: 300%;
-        margin-left: 15px; */
     }
     .hebergements figure{
         max-width: unset;
+        margin: 10px 20px;
     }
-    /* .hebergements figure figcaption{
-        margin: 5px 10px 0px 10px;
-    }
-    .hebergements figure figcaption p{
-        
-    } */
-    
 
     .activites{
         flex-direction: column;
         height: auto;
-        margin: 0;
+        margin: 0 20px;
+    }
+    #activites{
+        margin: 10px 20px;
+    }
+    .conteneur h2#activites.titre {
+        margin-left: 20px ;
     }
     .activites .colonne{
         width: 100%;
@@ -528,6 +564,9 @@ footer a{
     footer{
         flex-direction: column;
         padding: 20px 20px;
+        margin-top: 20px;
+        
+
     }
     
     footer h2{
