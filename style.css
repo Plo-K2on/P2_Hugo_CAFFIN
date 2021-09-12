@@ -58,8 +58,6 @@ nav ul{
 nav ul li{
     margin-left: 20px;
     display: flex;
-    /* display: flex;
-    flex-direction: row; */
 }
 nav ul li:hover{
     border-top: 1px solid #0065FC;
@@ -195,7 +193,6 @@ main aside h2{
     justify-content: space-between;
     font-weight: bold;
     font-size: 15px;
-    /* margin: 10px 20px; */
     margin: 10px 0 0 0;
 }
 
@@ -301,7 +298,6 @@ main .conteneur{
     justify-content: space-between;
     align-content: space-between;
     margin-top: 20px;
-    /* border: 1px solid yellow; */
 }
 .conteneur p{
     font-size: 15px;
@@ -319,7 +315,6 @@ main .conteneur{
     flex-direction: column;
     justify-content: space-between;
     width: 23%;
-    /* border: 2px solid green; */
 }
 .activites .colonne figure{
     display: flex;
@@ -330,7 +325,6 @@ main .conteneur{
     border-radius: 10px;
     background-color: white;
     box-shadow: 2px 2px 5px silver;
-    /* border: 2px solid blue; */
 }
 
 .activites .colonne figure .image{
@@ -338,7 +332,6 @@ main .conteneur{
     justify-content: center;
     height: 390px;
     border-radius: 10px 10px 0 0;
-    /* border: 2px solid red; */
     align-content: center;
     align-items: center;
 }
@@ -353,7 +346,6 @@ main .conteneur{
     align-items: center;
     height: 60px;
     margin: 0 0 0 20px;
-    /* border: 1px solid black; */
 }
 .activites .colonne figure figcaption h2{
     font-size: 15px;
@@ -460,13 +452,11 @@ footer a{
         width: 60px;
         max-width: 60px;
         border-radius: 20px;
-        
     }
     #recherche .mobile i{
         color: white;
         margin-bottom: 5px;
         margin-top: 7px;
-
     }
     #recherche .desktop{
         display: none;
@@ -565,8 +555,6 @@ footer a{
         flex-direction: column;
         padding: 20px 20px;
         margin-top: 20px;
-        
-
     }
     
     footer h2{
