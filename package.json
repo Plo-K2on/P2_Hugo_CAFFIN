@@ -1,0 +1,19 @@
+{
+  "name": "p2_vs_code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Plo-K2on/P2_Hugo_CAFFIN.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Plo-K2on/P2_Hugo_CAFFIN/issues"
+  },
+  "homepage": "https://github.com/Plo-K2on/P2_Hugo_CAFFIN#readme"
+}
