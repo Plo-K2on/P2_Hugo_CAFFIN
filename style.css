@@ -267,6 +267,10 @@ main .conteneur{
     flex-wrap: nowrap;
     flex-direction: column;
 }
+.populaires a{
+    text-decoration: none;
+    color: black;
+}
 .populaires figure{
     height: 155px;
     display: flex;
